@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #D9A7A3;
+            margin: -46px 40px 40px 40px;
+            padding: 15px;
+        }
+
+        header {
+            border: 3px;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: #6C733D;
+        }
+
+        nav {
+            border-radius: 3px;
+            background-color: #c57e13;
+            padding: 5px;
+            box-shadow: 5px 4px 3px 1px #5c3b09;
+        }
+        
+        nav > a {
+           margin-right: 30px;
+        }
+
+        a::before {
+        content: '>';
+      }
+       
+        a::after {
+            content: '<';
+        }
+
+        a {
+            color: #262526;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        article {
+            text-align: center;
+            border: 5px;
+            border-left: 20px;
+            border-radius: 15px;
+            background-color: #858C4D;
+        }
+
+        article > aside {
+            text-align:right ;
+            border: 10px;
+            border-radius: 3px;
+            background-color: #262526;
+        }
+
+        footer {
+            padding: 2px;
+            border-radius: 3px;
+            text-align: center;
+            background-color: #F0F1F2;
+        }
+
+        div#bola {
+            height: 115px;
+            width: 115px;
+            background-color: #5c3b09;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taberna do Klei</h1>
+        <nav>
+            <a href="">Incío</a>
+            <a href="">Noticias</a>
+            <a href="" id="especial">Artigos Relevantes</a>
+            <a href="">em alta</a>
+            <a href="">Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Motivos do porque eu amo minha namorada</h2>
+                <p>Motivo 1: Ela é muito linda e majestosa</p>
+                <p>Motivo 2: Ela é carinhosa, atenciosa, fofa, prestativa e muito recíproca</p>
+                <p>Motivo 3: <mark>A bunda dela é enorme</mark></p>
+                <p>Motivo 4: A voz dela é perfeita, bem como os lábios, cabelo, olhos e nariz</p>
+                <aside>
+                    Ela é uma safadinha de 1.60 XD
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>GRAVE: Homem de 19 anos não consegue decidir o que quer da vida</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, impedit. Aliquam maiores qui, eius non aperiam enim explicabo, cum quasi tempore ab voluptates voluptatem nisi beatae modi dolorum distinctio porro!</p>
+                <aside>
+                    <p>Artigo escrito pelo fred fudido</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por: Klei que ama a Kashi
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
