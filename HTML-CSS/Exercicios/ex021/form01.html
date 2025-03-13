@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, helvetica, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Labels estão relacionados aos inputs e precisam ser adicionados para os mecanismos de busca encontrarem os dados com mais facilidade.--> 
+    <!--Dados como: nome, peso, idade podem ser enviados pelo meio GET. Pois não são dados sensíveis que precisam ser criptografados.-->
+    <!--O limite de envio de dados do GET é de até 3.000 Bytes, o equivalente a 3 mil letras.-->
+    <h1>Formulário Básico</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+        <label for="inome">Nome:</label>
+             <input type="text" name="Nome" id="inome"></p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+            
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
