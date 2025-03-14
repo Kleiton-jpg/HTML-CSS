@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <!--Elementos também podem ser separados em grupos com a tag 'optgroup'-->
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="DF">Distrito Federal</option>
+                
+            </select>
+        </p>
+        <p> <!--Lista de dados usando o atributo "List" no input após fazer uma Data List com options.-->
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                <option value="CONT">Contabilista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg"><textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
