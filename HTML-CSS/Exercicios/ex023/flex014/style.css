@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    width: 100vw;
+    height: 100vh;
+}
+
+header, section.normal {
+    padding: 5px;
+}
+
+p, h1, h2 {
+    margin-bottom: 5px;
+}
+
+section.flexcontent {
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.781);
+}
