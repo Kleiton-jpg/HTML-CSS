@@ -9,19 +9,56 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
-    width: 100vw;
-    height: 100vh;
+    font-size: 1em;
+    line-height: 1.5em;
+   
 }
 
 header, section.normal {
-    padding: 5px;
+    padding: 20px;
 }
 
 p, h1, h2 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 section.flexcontent {
     padding: 20px;
-    background-color: rgba(128, 128, 128, 0.781);
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 400px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    padding: 0px 20px;
+    width: 90%;
 }
